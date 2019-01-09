@@ -1,0 +1,26 @@
+div {
+    width: 50vh;
+    height: 50vh;
+    margin: 10% 0% 0% 10%;
+    position: absolute;
+}
+
+#red {
+    background-color: #ff0000;
+    margin-left: 35%;
+    z-index: 1;
+}
+
+#green {
+    background-color: #00ff00;
+    z-index: 3;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+#blue {
+    background-color: #0000ff;
+    z-index: 2;
+    margin-left: 45%;
+    margin-top: 30%;
+}

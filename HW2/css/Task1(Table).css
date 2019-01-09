@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border-spacing: 1vw;
+    margin: -0.6vh 0 0vh 0;
+}
+
+#gray {
+    background-color: #e3e3e3;
+    height: 18vh;
+}
+
+#orange {
+    background-color: #ffa335;
+    height: 10vh;
+}
+
+
+#blue {
+    background-color: #4a89d0;
+    height: 26vh;
+}
+
+
+#yellow {
+    background-color: #daec00;
+    height: 30vh;
+}

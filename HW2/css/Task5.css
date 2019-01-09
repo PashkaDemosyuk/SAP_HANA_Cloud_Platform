@@ -1,0 +1,107 @@
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+#head {
+    width: 100%;
+    height: 15%;
+    display: inline-flex;
+}
+
+#head div:first-child {
+    background-color: #ee3226;
+    width: 33%;
+    height: 100%;
+    display: inherit;
+    margin: 1%;
+}
+
+#head div:last-child {
+    background-color: #ff7f27;
+    width: 62%;
+    height: 100%;
+    display: inherit;
+    margin: 1%;
+}
+
+#body {
+    width: 97%;
+    margin: 1%;
+    height: 45%;
+    background-color: #22b14c;
+}
+
+#block {
+    width: 100%;
+    height: 36%;
+    display: inline-flex;
+}
+
+#block div {
+    width: 31%;
+    background-color: #3f48cc;
+    margin: 1%;
+}
+
+#block div:first-child {
+    background-color: #b87956;
+}
+
+#block div:last-child {
+    background-color: #a349a4;
+}
+
+@media (max-device-width: 667px) {
+    #head div:first-child {
+        background-color: #22b14c;
+        width: 100%;
+    }
+
+    #body {
+        height: 15%;
+        background-color: #a349a4;
+    }
+
+    #block div:first-child, #block div:last-child, #head div:last-child {
+        display: none;
+    }
+
+    #block {
+        height: 63%;
+    }
+
+    #block div {
+        width: 100%;
+        background-color: #ee3226;
+    }
+}
+
+@media (min-device-width: 668px) and (max-device-width: 1024px) {
+    #head div:first-child {
+        background-color: #ff7f27;
+    }
+
+    #head div:last-child {
+        background-color: #a349a4;
+    }
+
+    #body {
+        height: 40%;
+        background-color: #ee3226;
+    }
+
+    #block div:last-child {
+        display: none;
+    }
+
+    #block {
+        height: 41%;
+    }
+
+    #block div {
+        width: 47.5%;
+        background-color: #3f48cc;
+        margin: 1%;
+    }
+}
