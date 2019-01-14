@@ -4,7 +4,14 @@ var text = 'Современная образовательная парадиг
     '   осуществляется развитие природных задатков, заложенных в каждом индивидууме, \n' +
     '   требует переосмысления существующих традиционных форм и \n' +
     '   методов общеобязательного образования.';
-
+var answers = ['А ну поясни ещё раз...',
+    'Чёёёёёё',
+    'Сложно сложно не понятно',
+    'Кавоооо',
+    'Замолчи уже',
+    'Я тебя игнорю',
+    '...',
+    'вы добавлены в чс...'];
 for (var i = 0; i < friends.length; i++) {
     var el = document.createElement("div");
     el.classList.add("list-item");
@@ -25,7 +32,7 @@ function openChat(friend) {
     var cont = document.getElementById("messages");
     cont.appendChild(hi);
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 8; i++) {
         var mes = document.createElement("div");
         mes.classList.add("sms");
         mes.innerHTML = '<img src="source/' + friend.id + '.jpg" class="sms-img"><div class="sms-text">' + text + '</div>';
@@ -34,7 +41,7 @@ function openChat(friend) {
 
         var ans = document.createElement("div");
         ans.classList.add("answer");
-        ans.innerHTML = '<div class="answer-text">' + text + '</div><img src="source/myphoto.jpg" class="sms-img">';
+        ans.innerHTML = '<div class="answer-text">' + answers[i] + '</div><img src="source/myphoto.jpg" class="sms-img">';
         var cont = document.getElementById("messages");
         cont.appendChild(ans);
     }
