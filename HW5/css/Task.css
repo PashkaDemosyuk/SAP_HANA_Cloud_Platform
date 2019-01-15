@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    height: 100%;
+}
+form{
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+form input{
+    display:block;
+    width: 20%;
+    height: 20px;
+    margin-top: 10px;
+}
