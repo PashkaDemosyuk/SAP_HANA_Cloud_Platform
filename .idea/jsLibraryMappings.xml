@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{bootstrap, jquery, jquery-1.6.2, jquery-3.3.1.slim, jquery.tmpl, popper}" />
+    <file url="file://$PROJECT_DIR$/HW6" libraries="{SAP HANA Cloud Platform/HW 6/node_modules}" />
+    <file url="PROJECT" libraries="{SAP HANA Cloud Platform/HW 6/node_modules, bootstrap, jquery, jquery-1.6.2, jquery-3.3.1.slim, jquery.dataTables, jquery.tmpl, popper, sap-ui-core, sap-ui-core-dbg.js}" />
+    <includedPredefinedLibrary name="HTTP Response Handler" />
   </component>
 </project>
