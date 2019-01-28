@@ -1,0 +1,33 @@
+<mvc:View
+	controllerName="sap.ui.odatav4.controller.Home"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<App id="home">
+		<pages>
+			<Page
+		id="personListPage"
+		title="{i18n>peoplePageTitle}"
+		class="sapUiResponsiveContentPadding">
+				<SearchField
+					liveChange="onSearch"
+					width="100%"/>
+		<content>
+			<List id="personList" 
+				  headerText="{i18n>peopleListTitle}" 
+				  items="{
+					path: 'people>/value'
+					}"
+			>
+				<items>
+						<StandardListItem title="{people>FirstName} {people>LastName}  "
+								          type="Navigation"
+										  press = ".onItemSelected"
+						/>
+					</items>
+			</List>
+		</content>
+	</Page>
+		</pages>
+	</App>
+</mvc:View>

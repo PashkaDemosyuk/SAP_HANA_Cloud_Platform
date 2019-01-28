@@ -1,0 +1,50 @@
+<mvc:View
+	controllerName="sap.ui.odatav4.controller.PersonDetails"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	busyIndicatorDelay="0">
+	<Page
+		id="personPage"
+		title="{i18n>PersonDetailsOf} {people>FirstName} {people>LastName}"
+		showNavButton="true"
+		navButtonPress=".onNavBack"
+		class="sapUiResponsiveContentPadding">
+		<content>
+			<Panel
+				width="auto"
+				class="sapUiResponsiveMargin sapUiNoContentPadding">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="{i18n>PersonIDColon} {people>UserName}" level="H2"/>
+						<ToolbarSpacer />
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<f:SimpleForm
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout"
+						>
+						<f:content>
+							<Label text="{i18n>formFirstName}"/>
+							<Text text="{people>FirstName}"/>
+							<Label text="{i18n>formLastName}"/>
+							<Text text="{people>LastName}"/>
+							<Label text="{i18n>formGender}"/>
+							<Text text="{people>Gender}"/>
+							<Label text="{i18n>formEmail}"/>
+							<FormattedText htmlText="{people>Emails/0}&lt;br&gt;{people>Emails/1}" />
+							<Label text="{i18n>formCountryRegion}"/>
+							<FormattedText htmlText="{people>AddressInfo/0/City/CountryRegion}" />
+							<Label text="{i18n>formCity}"/>
+							<FormattedText htmlText="{people>AddressInfo/0/City/Name}" />
+							<Label text="{i18n>formAddress}"/>
+							<FormattedText htmlText="{people>AddressInfo/0/Address}" />
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+</mvc:View>
